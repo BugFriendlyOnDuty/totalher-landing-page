@@ -1696,7 +1696,7 @@ input[type="checkbox"]:checked::after {
   display: inline-block;
   width: 10px;
   height: 9px;
-  background-image: url("/assets/li-before-tik.svg");
+  background-image: url("./assets/li-before-tik.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 10px;
@@ -1705,7 +1705,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .premium-card .features-list li::before {
-  background-image: url("/assets/li-before-tik-white.svg");
+  background-image: url("./assets/li-before-tik-white.svg");
   color: rgba(255, 255, 255, 0.9);
 }
 
