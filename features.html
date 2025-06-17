@@ -15,11 +15,11 @@
         <div class="nav-links">
           <a class="nav-links-item" href="./index.html">Home</a>
           <a class="nav-links-item" href="./about.html">About</a>
-          <a class="nav-links-item" href="./features.html">Features</a>
+          <a class="nav-links-item active" href="./features.html">Features</a>
           <a class="nav-links-item" href="./subscription.html">Subscription</a>
           <a class="nav-links-item" href="./faq.html">FAQs</a>
           <a class="nav-links-item" href="./blogs.html">Blogs</a>
-          <a class="nav-links-item active" href="./contact.html">Contact Us</a>
+          <a class="nav-links-item" href="./contact.html">Contact Us</a>
         </div>
         <div class="lang">
           <img class="flag" src="./assets/flag.svg" />
@@ -32,114 +32,98 @@
         </div>
       </div>
     </nav>
-    <div class="common-banner contact-banner">
+    <div class="common-banner features-banner">
       <div class="common-banner-left">
         <h1>
-          Contact
+          TotalHER
           <span class="text-span-1"
-            >Us
+            >Features
             <div class="underline"></div
           ></span>
         </h1>
-        <p class="subheading">We are here for every HER. Always.</p>
+        <p class="subheading">Capture, Share & Connect With the HER World</p>
       </div>
       <div class="common-banner-right">
-        <img src="./assets/contact-bg.png" />
+        <img src="./assets/features-bg-image.png" />
       </div>
     </div>
-    <div class="contact-form">
-      <h2>
-        Let’s Get
-        <span class="text-span-2"
-          >Started!
-          <div class="underline-2"></div>
-        </span>
-      </h2>
-      <p class="desc">
-        Got questions, ideas, or just want to connect? We are here to assist.
+    <div class="tab-container">
+      <div class="tab-menu">
+        <div class="tab active" data-tab="express">Express & Share</div>
+        <div class="tab" data-tab="safe">Safe & Authentic Connections</div>
+        <div class="tab" data-tab="explore">Explore & Discover</div>
+        <div class="tab" data-tab="shop">Discover & Shop</div>
+        <div class="tab" data-tab="tools">Tools for Growth & Monetization</div>
+        <div class="tab" data-tab="privacy">Privacy & Safety First</div>
+        <div class="tab" data-tab="subscription">
+          TotalHER Subscription Plans
+        </div>
+        <div class="tab" data-tab="promise">Our Community Promise</div>
+      </div>
+
+      <div class="tab-content">
+        <div class="content active" id="express">
+          <div class="card">
+            <div class="tab-card-title-box">
+              <div class="tab-card-image-box">
+                <img
+                  src="./assets/instagram-logo-1.svg"
+                  class="tab-card-image"
+                />
+              </div>
+              <h3 class="tab-card-title">Stories & Reels</h3>
+            </div>
+            <p class="tab-card-desc">
+              Bring your stories to life! Share short videos and creative
+              moments effortlessly with stunning effects, catchy music, and
+              personalized stickers.
+            </p>
+          </div>
+          <div class="card">
+            <div class="tab-card-title-box">
+              <div class="tab-card-image-box">
+                <img src="./assets/nine-dot.svg" class="tab-card-image" />
+              </div>
+              <h3 class="tab-card-title">Feed Posts & Carousels</h3>
+            </div>
+            <p class="tab-card-desc">
+              Celebrate life’s highlights and daily moments with photos and
+              videos. Your feed, beautifully curated by you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Add other tab contents below similarly -->
+        <div class="content" id="safe">
+          Safe & Authentic Connections content here...
+        </div>
+        <div class="content" id="explore">
+          Explore & Discover content here...
+        </div>
+        <div class="content" id="shop">Discover & Shop content here...</div>
+        <div class="content" id="tools">
+          Tools for Growth & Monetization content here...
+        </div>
+        <div class="content" id="privacy">
+          Privacy & Safety First content here...
+        </div>
+        <div class="content" id="subscription">
+          TotalHER Subscription Plans content here...
+        </div>
+        <div class="content" id="promise">
+          Our Community Promise content here...
+        </div>
+      </div>
+    </div>
+    <div class="common-footer-banner subscription-footer-banner">
+      <h2>Join the Waitlist Today!</h2>
+      <p class="description">
+        Be among the first to unlock all these amazing features and step<br />
+        into HER space!
       </p>
-      <form>
-        <p>
-          Let us discuss how TotalHER can lift your brand, increase your reach,
-          and connect you with women who interact. Complete the form, and we
-          will follow up.
-        </p>
-        <div class="form-grid-1">
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-          </div>
-
-          <div class="form-group">
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="America">America</option>
-              <option value="Canada">Canada</option>
-              <option value="UK">United Kingdom</option>
-              <option value="Australia">Australia</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-        </div>
-        <div class="form-grid-2">
-          <div class="form-group">
-            <label for="description">Description</label>
-            <textarea id="description" name="description"></textarea>
-          </div>
-        </div>
-        <div class="checkbox-group">
-          <input type="checkbox" id="checkbox" name="checkbox" />
-          <label class="checkbox-label"
-            >I agree to be contacted by TotalHER regarding my inquiry.</label
-          >
-        </div>
-
-        <button class="btn submit-btn">
-          <div class="btn-text">SUBMIT</div>
-          <img class="btn-logo" src="./assets/button-tail.svg" />
-        </button>
-      </form>
-    </div>
-    <div class="contact-us">
-      <div class="contact-card">
-        <div>
-          <img src="./assets/contact-call.svg" />
-        </div>
-        <p class="card-title">Phone Number</p>
-        <p class="card-desc">Reach us directly! We are just a call away.</p>
-        <div class="address-text">866-786-8254</div>
-      </div>
-      <div class="contact-card">
-        <div>
-          <img src="./assets/contact-mail.svg" />
-        </div>
-        <p class="card-title">Email ID</p>
-        <p class="card-desc">Drop us a mail anytime, our inbox is open.</p>
-        <div class="address-text">
-          General Inquiry: hello@totalher.co<br />
-          App Support: totalherapp@gmail.com
-        </div>
-      </div>
-      <div class="contact-card">
-        <div>
-          <img src="./assets/contact-location.svg" />
-        </div>
-        <p class="card-title">Location</p>
-        <p class="card-desc">Global at heart. Rooted in Georgia.</p>
-        <div class="address-text">
-          429 Loganville Hwy Ste 103 #7<br />
-          Winder, GA 30680 USA
-        </div>
+      <div class="btn footer-banner-btn">
+        <div class="btn-text">JOIN THE WAITLIST</div>
+        <img class="btn-logo" src="./assets/button-tail-1.png" />
       </div>
     </div>
     <footer>
@@ -278,4 +262,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>

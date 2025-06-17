@@ -17,9 +17,9 @@
           <a class="nav-links-item" href="./about.html">About</a>
           <a class="nav-links-item" href="./features.html">Features</a>
           <a class="nav-links-item" href="./subscription.html">Subscription</a>
-          <a class="nav-links-item" href="./faq.html">FAQs</a>
+          <a class="nav-links-item active" href="./faq.html">FAQs</a>
           <a class="nav-links-item" href="./blogs.html">Blogs</a>
-          <a class="nav-links-item active" href="./contact.html">Contact Us</a>
+          <a class="nav-links-item" href="./contact.html">Contact Us</a>
         </div>
         <div class="lang">
           <img class="flag" src="./assets/flag.svg" />
@@ -32,114 +32,149 @@
         </div>
       </div>
     </nav>
-    <div class="common-banner contact-banner">
+    <div class="common-banner subscription-banner">
       <div class="common-banner-left">
-        <h1>
-          Contact
-          <span class="text-span-1"
-            >Us
-            <div class="underline"></div
-          ></span>
-        </h1>
-        <p class="subheading">We are here for every HER. Always.</p>
+        <h1>FAQs</h1>
+        <p class="subheading">
+          From Curiosity to Clarity — Your <br />FAQs, Answered.
+        </p>
       </div>
       <div class="common-banner-right">
-        <img src="./assets/contact-bg.png" />
+        <img src="./assets/faq-bg.png" />
       </div>
     </div>
-    <div class="contact-form">
-      <h2>
-        Let’s Get
-        <span class="text-span-2"
-          >Started!
-          <div class="underline-2"></div>
-        </span>
-      </h2>
-      <p class="desc">
-        Got questions, ideas, or just want to connect? We are here to assist.
+    <div class="faq-container">
+      <div class="faq-tabs">
+        <button class="faq-tab active" data-tab="general">General</button>
+        <button class="faq-tab" data-tab="features">Features</button>
+        <button class="faq-tab" data-tab="safety_privacy">Safety & Privacy</button>
+        <button class="faq-tab" data-tab="subscriptions">Subscriptions</button>
+        <div class="faq-search-container">
+          <img class="faq-search-icon" src="./assets/search-icon.svg" />
+          <input type="text" placeholder="Search..." class="faq-search-input" />
+        </div>
+      </div>
+      <div class="faq-divider"></div>
+      <div class="faq-content-section active" id="general">
+        <h2 class="faq-heading">General</h2>
+
+        <div class="faq-item expanded">
+          <button class="faq-question">
+            What is TotalHER, and who can join?
+            <span class="faq-icon">−</span>
+          </button>
+          <div class="faq-answer">
+            TotalHER is a dedicated social platform built exclusively for women
+            to connect, share, grow, and monetize their talents in a safe,
+            verified space. Only women can join, and every member goes through a
+            simple identity verification process to ensure authenticity and
+            community safety.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is TotalHER free to use?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Yes, TotalHER is free to use.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I join the waitlist?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            You can join the waitlist by signing up on our website.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is TotalHER available globally?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            TotalHER is launching in select regions initially.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I invite my friends to TotalHER?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes, you can invite your friends after signing up.
+          </div>
+        </div>
+      </div>
+      <div class="faq-content-section" id="features">
+        <h2 class="faq-heading">Features</h2>
+
+        <div class="faq-item expanded">
+          <button class="faq-question">
+            What is TotalHER, and who can join?
+            <span class="faq-icon">−</span>
+          </button>
+          <div class="faq-answer">
+            TotalHER is a dedicated social platform built exclusively for women
+            to connect, share, grow, and monetize their talents in a safe,
+            verified space. Only women can join, and every member goes through a
+            simple identity verification process to ensure authenticity and
+            community safety.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is TotalHER free to use?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Yes, TotalHER is free to use.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I join the waitlist?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            You can join the waitlist by signing up on our website.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is TotalHER available globally?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            TotalHER is launching in select regions initially.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I invite my friends to TotalHER?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes, you can invite your friends after signing up.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="common-footer-banner subscription-footer-banner">
+      <h2>Still Have Questions?</h2>
+      <p class="description">
+        We are here to help! Contact our support team below.
       </p>
-      <form>
-        <p>
-          Let us discuss how TotalHER can lift your brand, increase your reach,
-          and connect you with women who interact. Complete the form, and we
-          will follow up.
-        </p>
-        <div class="form-grid-1">
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-          </div>
-
-          <div class="form-group">
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="America">America</option>
-              <option value="Canada">Canada</option>
-              <option value="UK">United Kingdom</option>
-              <option value="Australia">Australia</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-        </div>
-        <div class="form-grid-2">
-          <div class="form-group">
-            <label for="description">Description</label>
-            <textarea id="description" name="description"></textarea>
-          </div>
-        </div>
-        <div class="checkbox-group">
-          <input type="checkbox" id="checkbox" name="checkbox" />
-          <label class="checkbox-label"
-            >I agree to be contacted by TotalHER regarding my inquiry.</label
-          >
-        </div>
-
-        <button class="btn submit-btn">
-          <div class="btn-text">SUBMIT</div>
-          <img class="btn-logo" src="./assets/button-tail.svg" />
-        </button>
-      </form>
-    </div>
-    <div class="contact-us">
-      <div class="contact-card">
-        <div>
-          <img src="./assets/contact-call.svg" />
-        </div>
-        <p class="card-title">Phone Number</p>
-        <p class="card-desc">Reach us directly! We are just a call away.</p>
-        <div class="address-text">866-786-8254</div>
-      </div>
-      <div class="contact-card">
-        <div>
-          <img src="./assets/contact-mail.svg" />
-        </div>
-        <p class="card-title">Email ID</p>
-        <p class="card-desc">Drop us a mail anytime, our inbox is open.</p>
-        <div class="address-text">
-          General Inquiry: hello@totalher.co<br />
-          App Support: totalherapp@gmail.com
-        </div>
-      </div>
-      <div class="contact-card">
-        <div>
-          <img src="./assets/contact-location.svg" />
-        </div>
-        <p class="card-title">Location</p>
-        <p class="card-desc">Global at heart. Rooted in Georgia.</p>
-        <div class="address-text">
-          429 Loganville Hwy Ste 103 #7<br />
-          Winder, GA 30680 USA
-        </div>
+      <div class="btn faq-footer-banner-btn">
+        <div class="btn-text">CONTACT US</div>
+        <img class="btn-logo" src="./assets/button-tail-1.png" />
       </div>
     </div>
     <footer>
@@ -278,4 +313,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
