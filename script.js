@@ -45,6 +45,16 @@ function scrollCarouselTypeThree(direction) {
   });
 }
 
+function scrollCarouselTypeFour(direction) {
+  const carousel = document.querySelector(".carousel");
+  const cardWidth = document.querySelector(".carousel-card-2").offsetWidth + 65; // card + gap
+
+  carousel.scrollBy({
+    left: direction * cardWidth,
+    behavior: "smooth",
+  });
+}
+
 document.querySelectorAll(".faq-question").forEach((btn) => {
   btn.addEventListener("click", () => {
     const item = btn.closest(".faq-item");
@@ -78,4 +88,69 @@ faqTabs.forEach((tabs) => {
     const tabId = tabs.getAttribute("data-tab");
     document.getElementById(tabId).classList.add("active");
   });
+});
+
+// Navbar Toggle
+
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("show");
+}
+
+// Language Selector
+
+const langSelector = document.getElementById("lang-selector");
+const optionsBox = document.getElementById("lang-options");
+const selectedLang = document.getElementById("selected-lang");
+const selectedFlag = document.getElementById("selected-flag");
+
+langSelector.addEventListener("click", () => {
+  optionsBox.style.display =
+    optionsBox.style.display === "block" ? "none" : "block";
+});
+
+document.querySelectorAll(".lang-option").forEach((option) => {
+  option.addEventListener("click", () => {
+    const lang = option.getAttribute("data-lang");
+    const flag = option.getAttribute("data-flag");
+
+    selectedLang.textContent = lang;
+    selectedFlag.src = flag;
+    optionsBox.style.display = "none !important";
+  });
+});
+
+window.addEventListener("click", (e) => {
+  if (!langSelector.contains(e.target)) {
+    optionsBox.style.display = "none";
+  }
+});
+
+// Language Selector Mobile
+
+const langSelectorMobile = document.getElementById("lang-selector-mobile");
+const optionsBoxMobile = document.getElementById("lang-options-mobile");
+const selectedLangMobile = document.getElementById("selected-lang-mobile");
+const selectedFlagMobile = document.getElementById("selected-flag-mobile");
+
+langSelectorMobile.addEventListener("click", () => {
+  optionsBoxMobile.style.display =
+    optionsBoxMobile.style.display === "block" ? "none" : "block";
+});
+
+document.querySelectorAll(".lang-option-mobile").forEach((option) => {
+  option.addEventListener("click", () => {
+    const lang = option.getAttribute("data-lang");
+    const flag = option.getAttribute("data-flag");
+
+    selectedLangMobile.textContent = lang;
+    selectedFlagMobile.src = flag;
+    optionsBoxMobile.style.display = "none !important";
+  });
+});
+
+window.addEventListener("click", (e) => {
+  if (!langSelectorMobile.contains(e.target)) {
+    optionsBoxMobile.style.display = "none";
+  }
 });

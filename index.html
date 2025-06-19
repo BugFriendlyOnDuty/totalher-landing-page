@@ -8,21 +8,113 @@
   </head>
   <body>
     <nav class="nav-bar">
-      <div class="nav-left">
-        <img src="./assets/logo.svg" />
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
+      <a href="./index.html" class="nav-left">
+        <img src="./assets/logo.svg" />
+      </a>
+
+      <div class="lang hamburger-1" id="lang-selector-mobile">
+        <img class="flag" id="selected-flag-mobile" src="./assets/flag.svg" />
+        <div class="country" id="selected-lang-mobile">EN</div>
+        <img class="dropdown" src="./assets/dropdown.svg" />
+
+        <div class="lang-options" id="lang-options-mobile">
+          <div
+            class="lang-option-mobile"
+            data-lang="EN"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>EN</span>
+          </div>
+          <div
+            class="lang-option-mobile"
+            data-lang="FR"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>FR</span>
+          </div>
+          <div
+            class="lang-option-mobile"
+            data-lang="DE"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>DE</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="./join-waitlist.html" class="btn nav-btn hamburger-2">
+        <div class="btn-text">JOIN WAITLIST</div>
+        <img class="btn-logo" src="./assets/button-tail.svg" />
+      </a>
+
       <div class="nav-right">
         <div class="nav-links">
-          <a class="nav-links-item active" href="./index.html">Home</a>
+          <a class="nav-links-item" href="./index.html">Home</a>
           <a class="nav-links-item" href="./about.html">About</a>
           <a class="nav-links-item" href="./features.html">Features</a>
-          <a class="nav-links-item" href="./subscription.html"
-            >Subscription</a
-          >
+          <a class="nav-links-item" href="./subscription.html">Subscription</a>
           <a class="nav-links-item" href="./faq.html">FAQs</a>
           <a class="nav-links-item" href="./blogs.html">Blogs</a>
           <a class="nav-links-item" href="./contact.html">Contact Us</a>
         </div>
+
+        <div class="lang" id="lang-selector">
+          <img class="flag" id="selected-flag" src="./assets/flag.svg" />
+          <div class="country" id="selected-lang">EN</div>
+          <img class="dropdown" src="./assets/dropdown.svg" />
+
+          <div class="lang-options" id="lang-options">
+            <div
+              class="lang-option"
+              data-lang="EN"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>EN</span>
+            </div>
+            <div
+              class="lang-option"
+              data-lang="FR"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>FR</span>
+            </div>
+            <div
+              class="lang-option"
+              data-lang="DE"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>DE</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="./join-waitlist.html" class="btn nav-btn">
+          <div class="btn-text">JOIN WAITLIST</div>
+          <img class="btn-logo" src="./assets/button-tail.svg" />
+        </a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./features.html">Features</a>
+        <a href="./subscription.html">Subscription</a>
+        <a href="./faq.html">FAQs</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="./contact.html">Contact Us</a>
         <div class="lang">
           <img class="flag" src="./assets/flag.svg" />
           <div class="country">EN</div>
@@ -34,6 +126,7 @@
         </div>
       </div>
     </nav>
+
     <div class="section-1">
       <div class="hero-section">
         <div class="container-left">
@@ -430,7 +523,7 @@
             </div>
             <div class="quick-links-menu-item">
               <img src="./assets/right-arrow.svg" />
-              <a href="./join-waitlist.html" class="quick-links-menu-item-text"
+              <a href="./request-her.html" class="quick-links-menu-item-text"
                 >RequestHER</a
               >
             </div>
@@ -481,6 +574,135 @@
           </div>
         </div>
       </div>
+      <div class="footer-content-mobile">
+        <div class="footer-content-mobile-1">
+          <div class="footer-logo">
+            <img src="./assets/footer-logo.svg" />
+            <div class="social-group">
+              <a
+                href="https://www.facebook.com/profile.php?id=61575257015506"
+                target="_blank"
+                class="social"
+                ><img src="./assets/fb.svg"
+              /></a>
+              <a
+                href="https://www.youtube.com/@totalher"
+                target="_blank"
+                class="social"
+                ><img src="./assets/youtube.svg"
+              /></a>
+              <a href="https://x.com/totalher" target="_blank" class="social"
+                ><img src="./assets/x.svg"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/phoenix-marcus-llc/"
+                target="_blank"
+                class="social"
+                ><img src="./assets/linkedin.svg"
+              /></a>
+            </div>
+            <div class="slash-bar footer-slash-bar"></div>
+          </div>
+          <div class="newsletter">
+            <div class="footer-columns-heading">Newsletter</div>
+            <div class="bottom-bar"></div>
+            <div class="newsletter-text">
+              Stay Connected & Informed with TotalHER.<br />
+              Sign up to get notified about our launch and updates.
+            </div>
+            <div class="email-input-box">
+              <img src="./assets/newsletter-email.svg" alt="mail icon" />
+              <input type="email" placeholder="Enter your email" />
+            </div>
+            <div class="btn newsletter-btn">
+              <div class="btn-text">NOTIFY ME</div>
+              <img class="btn-logo" src="./assets/button-tail.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-content-mobile-2">
+          <div class="quick-links">
+            <div class="footer-columns-heading">Quick Links</div>
+            <div class="bottom-bar"></div>
+            <div class="quick-links-menu">
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./index.html" class="quick-links-menu-item-text"
+                  >Home</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./about.html" class="quick-links-menu-item-text"
+                  >About</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./features.html" class="quick-links-menu-item-text"
+                  >Features</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./subscription.html" class="quick-links-menu-item-text"
+                  >Subscription</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./faq.html" class="quick-links-menu-item-text">FAQs</a>
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./blogs.html" class="quick-links-menu-item-text"
+                  >Blogs</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./contact.html" class="quick-links-menu-item-text"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./request-her.html" class="quick-links-menu-item-text"
+                  >RequestHER</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="footer-columns-heading">Contact</div>
+            <div class="bottom-bar"></div>
+            <div class="contact-details">
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/location.svg" />
+                <div class="contact-details-item-text">
+                  429 Loganville Hwy Ste 103 #7 Winder, GA 30680 USA
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/mail.svg" />
+                <div class="contact-details-item-text">
+                  <span>General Inquiry:</span><br />hello@totalher.co
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/mail.svg" />
+                <div class="contact-details-item-text">
+                  <span>App Support:</span><br />totalherapp@gmail.com
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img src="./assets/phone.svg" />
+                <div class="contact-details-item-text">866-786-8254</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <img class="ellipse" src="./assets/ellipse.svg" />
       <div class="footer-divider"></div>
       <div class="footer-copyright">
@@ -493,4 +715,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>

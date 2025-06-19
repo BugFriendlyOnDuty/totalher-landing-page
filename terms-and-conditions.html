@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TotalHER</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <a href="./index.html" class="nav-left">
+        <img src="./assets/logo.svg" />
+      </a>
+
+      <div class="lang hamburger-1" id="lang-selector-mobile">
+        <img class="flag" id="selected-flag-mobile" src="./assets/flag.svg" />
+        <div class="country" id="selected-lang-mobile">EN</div>
+        <img class="dropdown" src="./assets/dropdown.svg" />
+
+        <div class="lang-options" id="lang-options-mobile">
+          <div
+            class="lang-option-mobile"
+            data-lang="EN"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>EN</span>
+          </div>
+          <div
+            class="lang-option-mobile"
+            data-lang="FR"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>FR</span>
+          </div>
+          <div
+            class="lang-option-mobile"
+            data-lang="DE"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>DE</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="./join-waitlist.html" class="btn nav-btn hamburger-2">
+        <div class="btn-text">JOIN WAITLIST</div>
+        <img class="btn-logo" src="./assets/button-tail.svg" />
+      </a>
+
+      <div class="nav-right">
+        <div class="nav-links">
+          <a class="nav-links-item" href="./index.html">Home</a>
+          <a class="nav-links-item" href="./about.html">About</a>
+          <a class="nav-links-item" href="./features.html">Features</a>
+          <a class="nav-links-item" href="./subscription.html">Subscription</a>
+          <a class="nav-links-item" href="./faq.html">FAQs</a>
+          <a class="nav-links-item" href="./blogs.html">Blogs</a>
+          <a class="nav-links-item" href="./contact.html">Contact Us</a>
+        </div>
+
+        <div class="lang" id="lang-selector">
+          <img class="flag" id="selected-flag" src="./assets/flag.svg" />
+          <div class="country" id="selected-lang">EN</div>
+          <img class="dropdown" src="./assets/dropdown.svg" />
+
+          <div class="lang-options" id="lang-options">
+            <div
+              class="lang-option"
+              data-lang="EN"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>EN</span>
+            </div>
+            <div
+              class="lang-option"
+              data-lang="FR"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>FR</span>
+            </div>
+            <div
+              class="lang-option"
+              data-lang="DE"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>DE</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="./join-waitlist.html" class="btn nav-btn">
+          <div class="btn-text">JOIN WAITLIST</div>
+          <img class="btn-logo" src="./assets/button-tail.svg" />
+        </a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./features.html">Features</a>
+        <a href="./subscription.html">Subscription</a>
+        <a href="./faq.html">FAQs</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="./contact.html">Contact Us</a>
+        <div class="lang">
+          <img class="flag" src="./assets/flag.svg" />
+          <div class="country">EN</div>
+          <img class="dropdown" src="./assets/dropdown.svg" />
+        </div>
+        <div class="btn nav-btn">
+          <div class="btn-text">JOIN WAITLIST</div>
+          <img class="btn-logo" src="./assets/button-tail.svg" />
+        </div>
+      </div>
+    </nav>
+    <div class="common-banner features-banner">
+      <div class="common-banner-left">
+        <h1>
+          TotalHER
+          <span class="text-span-3"
+            >Terms
+            <svg
+              class="underline-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="181"
+              height="13"
+              viewBox="0 0 181 13"
+              fill="none"
+            >
+              <path
+                d="M1 11C22.8184 4.20839 89.1642 -5.29987 180 11"
+                stroke="url(#paint0_linear_3445_5435)"
+                stroke-width="4"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_3445_5435"
+                  x1="1"
+                  y1="6.5"
+                  x2="180"
+                  y2="6.5"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FD3F5E" />
+                  <stop offset="1" stop-color="#D995C0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <br />
+          of Use
+        </h1>
+        <p class="subheading">Understanding Your Terms of Use, Our Way.</p>
+      </div>
+      <div class="common-banner-right">
+        <img src="./assets/privacy-policy-bg.png" />
+      </div>
+    </div>
+    <div class="privacy-container">
+      <div class="privacy-meta">
+        <p class="privacy-date">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+          >
+            <path
+              d="M22.2741 0H19.9377V2.33645C19.9377 2.80374 19.5483 3.11526 19.1589 3.11526C18.7695 3.11526 18.3801 2.80374 18.3801 2.33645V0H5.919V2.33645C5.919 2.80374 5.52959 3.11526 5.14019 3.11526C4.75078 3.11526 4.36137 2.80374 4.36137 2.33645V0H2.02492C0.856698 0 0 1.01246 0 2.33645V5.14019H24.9221V2.33645C24.9221 1.01246 23.5203 0 22.2741 0ZM0 6.7757V21.028C0 22.4299 0.856698 23.3645 2.1028 23.3645H22.352C23.5981 23.3645 25 22.352 25 21.028V6.7757H0ZM6.93146 19.8598H5.06231C4.75078 19.8598 4.43925 19.6262 4.43925 19.2368V17.2897C4.43925 16.9782 4.6729 16.6667 5.06231 16.6667H7.00935C7.32087 16.6667 7.6324 16.9003 7.6324 17.2897V19.2368C7.55452 19.6262 7.32087 19.8598 6.93146 19.8598ZM6.93146 12.8505H5.06231C4.75078 12.8505 4.43925 12.6168 4.43925 12.2274V10.2804C4.43925 9.96885 4.6729 9.65732 5.06231 9.65732H7.00935C7.32087 9.65732 7.6324 9.89097 7.6324 10.2804V12.2274C7.55452 12.6168 7.32087 12.8505 6.93146 12.8505ZM13.162 19.8598H11.215C10.9034 19.8598 10.5919 19.6262 10.5919 19.2368V17.2897C10.5919 16.9782 10.8255 16.6667 11.215 16.6667H13.162C13.4735 16.6667 13.785 16.9003 13.785 17.2897V19.2368C13.785 19.6262 13.5514 19.8598 13.162 19.8598ZM13.162 12.8505H11.215C10.9034 12.8505 10.5919 12.6168 10.5919 12.2274V10.2804C10.5919 9.96885 10.8255 9.65732 11.215 9.65732H13.162C13.4735 9.65732 13.785 9.89097 13.785 10.2804V12.2274C13.785 12.6168 13.5514 12.8505 13.162 12.8505ZM19.3925 19.8598H17.4455C17.134 19.8598 16.8224 19.6262 16.8224 19.2368V17.2897C16.8224 16.9782 17.0561 16.6667 17.4455 16.6667H19.3925C19.7041 16.6667 20.0156 16.9003 20.0156 17.2897V19.2368C20.0156 19.6262 19.7819 19.8598 19.3925 19.8598ZM19.3925 12.8505H17.4455C17.134 12.8505 16.8224 12.6168 16.8224 12.2274V10.2804C16.8224 9.96885 17.0561 9.65732 17.4455 9.65732H19.3925C19.7041 9.65732 20.0156 9.89097 20.0156 10.2804V12.2274C20.0156 12.6168 19.7819 12.8505 19.3925 12.8505Z"
+              fill="url(#paint0_linear_3202_8494)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_3202_8494"
+                x1="2.15694"
+                y1="-17.5005"
+                x2="27.6453"
+                y2="-15.7091"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF405E" />
+                <stop offset="1" stop-color="#B8509C" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>Effective Date: 10/05/2025</span>
+        </p>
+        <p class="privacy-updated">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+          >
+            <path
+              d="M22.2741 0H19.9377V2.33645C19.9377 2.80374 19.5483 3.11526 19.1589 3.11526C18.7695 3.11526 18.3801 2.80374 18.3801 2.33645V0H5.919V2.33645C5.919 2.80374 5.52959 3.11526 5.14019 3.11526C4.75078 3.11526 4.36137 2.80374 4.36137 2.33645V0H2.02492C0.856698 0 0 1.01246 0 2.33645V5.14019H24.9221V2.33645C24.9221 1.01246 23.5203 0 22.2741 0ZM0 6.7757V21.028C0 22.4299 0.856698 23.3645 2.1028 23.3645H22.352C23.5981 23.3645 25 22.352 25 21.028V6.7757H0ZM6.93146 19.8598H5.06231C4.75078 19.8598 4.43925 19.6262 4.43925 19.2368V17.2897C4.43925 16.9782 4.6729 16.6667 5.06231 16.6667H7.00935C7.32087 16.6667 7.6324 16.9003 7.6324 17.2897V19.2368C7.55452 19.6262 7.32087 19.8598 6.93146 19.8598ZM6.93146 12.8505H5.06231C4.75078 12.8505 4.43925 12.6168 4.43925 12.2274V10.2804C4.43925 9.96885 4.6729 9.65732 5.06231 9.65732H7.00935C7.32087 9.65732 7.6324 9.89097 7.6324 10.2804V12.2274C7.55452 12.6168 7.32087 12.8505 6.93146 12.8505ZM13.162 19.8598H11.215C10.9034 19.8598 10.5919 19.6262 10.5919 19.2368V17.2897C10.5919 16.9782 10.8255 16.6667 11.215 16.6667H13.162C13.4735 16.6667 13.785 16.9003 13.785 17.2897V19.2368C13.785 19.6262 13.5514 19.8598 13.162 19.8598ZM13.162 12.8505H11.215C10.9034 12.8505 10.5919 12.6168 10.5919 12.2274V10.2804C10.5919 9.96885 10.8255 9.65732 11.215 9.65732H13.162C13.4735 9.65732 13.785 9.89097 13.785 10.2804V12.2274C13.785 12.6168 13.5514 12.8505 13.162 12.8505ZM19.3925 19.8598H17.4455C17.134 19.8598 16.8224 19.6262 16.8224 19.2368V17.2897C16.8224 16.9782 17.0561 16.6667 17.4455 16.6667H19.3925C19.7041 16.6667 20.0156 16.9003 20.0156 17.2897V19.2368C20.0156 19.6262 19.7819 19.8598 19.3925 19.8598ZM19.3925 12.8505H17.4455C17.134 12.8505 16.8224 12.6168 16.8224 12.2274V10.2804C16.8224 9.96885 17.0561 9.65732 17.4455 9.65732H19.3925C19.7041 9.65732 20.0156 9.89097 20.0156 10.2804V12.2274C20.0156 12.6168 19.7819 12.8505 19.3925 12.8505Z"
+              fill="url(#paint0_linear_3202_8494)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_3202_8494"
+                x1="2.15694"
+                y1="-17.5005"
+                x2="27.6453"
+                y2="-15.7091"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF405E" />
+                <stop offset="1" stop-color="#B8509C" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>Last Updated: 12/06/2025</span>
+        </p>
+      </div>
+
+      <p class="privacy-text">
+        Welcome to TotalHER! These Terms of Use govern your access to and use of
+        the TotalHER platform. By accessing or using TotalHER, you agree to
+        comply with and be bound by these Terms. If you do not agree with these
+        Terms, please do not use our platform.
+      </p>
+      <p class="privacy-text">
+        These Terms of Use form the agreement between TotalHER (referred to as
+        "the Company," "We," "Us," or "Our") and you, the user ("You"). They
+        define your rights, responsibilities, and obligations while using
+        TotalHER and ensure that you understand and accept the rules of our
+        platform.
+      </p>
+
+      <h2 class="privacy-heading">1. Acceptance of Terms</h2>
+      <p class="privacy-text">
+        By accessing or using TotalHER, you acknowledge that you have read,
+        understood, and agree to be bound by these Terms of Use. If you disagree
+        with any part of the Terms, you must immediately stop using the Service.
+        These Terms apply to all users, whether you are a visitor, registered
+        user, or creator on the platform.
+      </p>
+
+      <h2 class="privacy-heading">2. Eligibility</h2>
+      <p class="privacy-text">
+        To use TotalHER, you must meet the following criteria:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Age Requirement: You must be at least 13 years old. If you are under
+          the age of 13, you are not permitted to use TotalHER. By accessing the
+          platform, you confirm that you are 13 or older.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Legal Capacity: You must have the legal capacity to enter into this
+          agreement. If you are accessing or using TotalHER on behalf of an
+          organization, you must ensure that you are authorized to accept these
+          Terms on behalf of that entity.
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">3. Account Registration</h2>
+      <p class="privacy-text">
+        To access certain features of TotalHER, you will need to create an
+        account. When registering, you must provide accurate, complete, and
+        up-to-date information. Your account credentials, including username and
+        password, are your responsibility, and you must maintain their
+        confidentiality. You are responsible for all activities that occur under
+        your account.
+      </p>
+      <p class="privacy-text">
+        Identity Verification: As part of the registration process, TotalHER may
+        require identity verification to ensure a safe, women-only environment.
+        Failure to comply with the verification process may result in restricted
+        access to some features.
+      </p>
+
+      <h2 class="privacy-heading">4. Use of Our Service</h2>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Personal Use: Use the Service only for personal, non-commercial
+          purposes unless explicitly allowed by these Terms.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Compliance with Rules: Follow all applicable local, state, and
+          international laws and regulations.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Respectful Conduct: Engage respectfully with other users. Harassment,
+          hate speech, or abusive behavior is prohibited.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Content Ownership: You retain ownership of your content but grant
+          TotalHER a license to use, display, and distribute it for
+          platform-related functions.
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">
+        5. Acceptable Use and Prohibited Activities
+      </h2>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Post Harmful Content: Upload content that is illegal, offensive,
+          discriminatory, or violates intellectual property rights.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Harassment: Engage in harassment, bullying, or abusive behavior.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Impersonation: Impersonate any other person, entity, or organization.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Spam or Misuse: Use the platform for spam, unsolicited marketing, or
+          fraudulent activities.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Circumvent Security: Attempt to gain unauthorized access to any part
+          of TotalHER or its systems.
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">6. Privacy and Data Protection</h2>
+      <p class="privacy-text">
+        Your privacy is important to us. We collect personal information to
+        provide, improve, and personalize the TotalHER experience. By using our
+        platform, you agree to the collection, use, and sharing of your data as
+        described in our Privacy Policy. We implement measures to protect your
+        data but cannot guarantee absolute security.
+      </p>
+
+      <h2 class="privacy-heading">7. Subscription Plans and Payments</h2>
+      <p class="privacy-text">TotalHER offers various subscription plans:</p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Free Plan: Includes access to basic features like messaging, posting,
+          and exploring.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Premium Plan: Offers advanced features such as RequestHER (Book a
+          Session), enhanced visibility, and monetization tools. Subscription
+          fees are billed annually or monthly.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Payment Methods: Payments for premium plans are processed via
+          third-party services. You agree to pay the applicable subscription
+          fees for the services you choose.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Non-Refundable: All fees are non-refundable unless otherwise required
+          by law.
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">8. Termination of Account</h2>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          You violate these Terms of Use.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          You engage in illegal or abusive behavior.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          We determine that your actions pose a risk to the platform or other
+          users.
+        </li>
+      </ul>
+      <p class="privacy-text">
+        Upon termination, you lose access to the platform and any content
+        associated with your account.
+      </p>
+
+      <h2 class="privacy-heading">9. Limitation of Liability</h2>
+      <p class="privacy-text">
+        TotalHER is not liable for any indirect, incidental, special, or
+        consequential damages arising from your use of the platform, including
+        loss of profits, loss of data, or personal injury. Our total liability
+        is limited to the amount you have paid for using the platform in the
+        past 12 months.
+      </p>
+
+      <h2 class="privacy-heading">10. Dispute Resolution</h2>
+      <p class="privacy-text">
+        In the event of any disputes, both parties agree to attempt to resolve
+        the issue informally. If unresolved, the dispute will be handled through
+        binding arbitration under the laws of the State of Georgia, United
+        States. By using the Service, you consent to arbitration and waive your
+        right to a jury trial.
+      </p>
+
+      <h2 class="privacy-heading">11. Governing Law</h2>
+      <p class="privacy-text">
+        These Terms and your use of TotalHER are governed by the laws of the
+        State of Georgia, United States, excluding its conflict of laws rules.
+        Any disputes will be resolved under the jurisdiction of Georgia courts.
+      </p>
+
+      <h2 class="privacy-heading">12. Modification of Terms</h2>
+      <p class="privacy-text">
+        We reserve the right to modify these Terms at any time. When changes
+        occur, we will update the Effective Date. We will notify you of
+        significant changes by email or through a notice on the platform.
+        Continued use of the Service after modifications signifies your
+        acceptance of the new terms.
+      </p>
+
+      <h2 class="privacy-heading">13. Contact Us</h2>
+      <p class="privacy-text">
+        If you have any questions or concerns regarding these Terms of Use or
+        your privacy, please contact us at:
+        <br />
+        <span class="privacy-text-email"
+          >Email:
+          <a href="mailto:totalherapp@gmail.com">totalherapp@gmail.com</a>
+        </span>
+        <br />
+        <span class="privacy-text-email"
+          >Phone Number:
+          <a href="tel:866-786-8254">866-786-8254</a>
+        </span>
+      </p>
+
+      <h2 class="privacy-heading">14. Severability</h2>
+      <p class="privacy-text">
+        If any part of these Terms is deemed unenforceable, the remaining
+        provisions will continue to be effective. We will attempt to adjust any
+        unenforceable provision to meet the intended objectives to the greatest
+        extent possible under applicable law.
+      </p>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./assets/footer-logo.svg" />
+          <div class="social-group">
+            <a
+              href="https://www.facebook.com/profile.php?id=61575257015506"
+              target="_blank"
+              class="social"
+              ><img src="./assets/fb.svg"
+            /></a>
+            <a
+              href="https://www.youtube.com/@totalher"
+              target="_blank"
+              class="social"
+              ><img src="./assets/youtube.svg"
+            /></a>
+            <a href="https://x.com/totalher" target="_blank" class="social"
+              ><img src="./assets/x.svg"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/phoenix-marcus-llc/"
+              target="_blank"
+              class="social"
+              ><img src="./assets/linkedin.svg"
+            /></a>
+          </div>
+          <div class="slash-bar footer-slash-bar"></div>
+        </div>
+        <div class="quick-links">
+          <div class="footer-columns-heading">Quick Links</div>
+          <div class="bottom-bar"></div>
+          <div class="quick-links-menu">
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./index.html" class="quick-links-menu-item-text">Home</a>
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./about.html" class="quick-links-menu-item-text"
+                >About</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./features.html" class="quick-links-menu-item-text"
+                >Features</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./subscription.html" class="quick-links-menu-item-text"
+                >Subscription</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./faq.html" class="quick-links-menu-item-text">FAQs</a>
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./blogs.html" class="quick-links-menu-item-text"
+                >Blogs</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./contact.html" class="quick-links-menu-item-text"
+                >Contact Us</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./request-her.html" class="quick-links-menu-item-text"
+                >RequestHER</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="footer-columns-heading">Contact</div>
+          <div class="bottom-bar"></div>
+          <div class="contact-details">
+            <div class="contact-details-item">
+              <img class="img-margin-top" src="./assets/location.svg" />
+              <div class="contact-details-item-text">
+                429 Loganville Hwy Ste 103 #7 Winder, GA 30680 USA
+              </div>
+            </div>
+            <div class="contact-details-item">
+              <img class="img-margin-top" src="./assets/mail.svg" />
+              <div class="contact-details-item-text">
+                <span>General Inquiry:</span><br />hello@totalher.co
+              </div>
+            </div>
+            <div class="contact-details-item">
+              <img class="img-margin-top" src="./assets/mail.svg" />
+              <div class="contact-details-item-text">
+                <span>App Support:</span><br />totalherapp@gmail.com
+              </div>
+            </div>
+            <div class="contact-details-item">
+              <img src="./assets/phone.svg" />
+              <div class="contact-details-item-text">866-786-8254</div>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter">
+          <div class="footer-columns-heading">Newsletter</div>
+          <div class="bottom-bar"></div>
+          <div class="newsletter-text">
+            Stay Connected & Informed with TotalHER.<br />
+            Sign up to get notified about our launch and updates.
+          </div>
+          <div class="email-input-box">
+            <img src="./assets/newsletter-email.svg" alt="mail icon" />
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <div class="btn newsletter-btn">
+            <div class="btn-text">NOTIFY ME</div>
+            <img class="btn-logo" src="./assets/button-tail.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-content-mobile">
+        <div class="footer-content-mobile-1">
+          <div class="footer-logo">
+            <img src="./assets/footer-logo.svg" />
+            <div class="social-group">
+              <a
+                href="https://www.facebook.com/profile.php?id=61575257015506"
+                target="_blank"
+                class="social"
+                ><img src="./assets/fb.svg"
+              /></a>
+              <a
+                href="https://www.youtube.com/@totalher"
+                target="_blank"
+                class="social"
+                ><img src="./assets/youtube.svg"
+              /></a>
+              <a href="https://x.com/totalher" target="_blank" class="social"
+                ><img src="./assets/x.svg"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/phoenix-marcus-llc/"
+                target="_blank"
+                class="social"
+                ><img src="./assets/linkedin.svg"
+              /></a>
+            </div>
+            <div class="slash-bar footer-slash-bar"></div>
+          </div>
+          <div class="newsletter">
+            <div class="footer-columns-heading">Newsletter</div>
+            <div class="bottom-bar"></div>
+            <div class="newsletter-text">
+              Stay Connected & Informed with TotalHER.<br />
+              Sign up to get notified about our launch and updates.
+            </div>
+            <div class="email-input-box">
+              <img src="./assets/newsletter-email.svg" alt="mail icon" />
+              <input type="email" placeholder="Enter your email" />
+            </div>
+            <div class="btn newsletter-btn">
+              <div class="btn-text">NOTIFY ME</div>
+              <img class="btn-logo" src="./assets/button-tail.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-content-mobile-2">
+          <div class="quick-links">
+            <div class="footer-columns-heading">Quick Links</div>
+            <div class="bottom-bar"></div>
+            <div class="quick-links-menu">
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./index.html" class="quick-links-menu-item-text"
+                  >Home</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./about.html" class="quick-links-menu-item-text"
+                  >About</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./features.html" class="quick-links-menu-item-text"
+                  >Features</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./subscription.html" class="quick-links-menu-item-text"
+                  >Subscription</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./faq.html" class="quick-links-menu-item-text">FAQs</a>
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./blogs.html" class="quick-links-menu-item-text"
+                  >Blogs</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./contact.html" class="quick-links-menu-item-text"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./request-her.html" class="quick-links-menu-item-text"
+                  >RequestHER</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="footer-columns-heading">Contact</div>
+            <div class="bottom-bar"></div>
+            <div class="contact-details">
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/location.svg" />
+                <div class="contact-details-item-text">
+                  429 Loganville Hwy Ste 103 #7 Winder, GA 30680 USA
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/mail.svg" />
+                <div class="contact-details-item-text">
+                  <span>General Inquiry:</span><br />hello@totalher.co
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/mail.svg" />
+                <div class="contact-details-item-text">
+                  <span>App Support:</span><br />totalherapp@gmail.com
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img src="./assets/phone.svg" />
+                <div class="contact-details-item-text">866-786-8254</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="ellipse" src="./assets/ellipse.svg" />
+      <div class="footer-divider"></div>
+      <div class="footer-copyright">
+        <div>Copyright © 2025 TotalHER. All rights reserved.</div>
+        <div>
+          <a href="./privacy-policy.html">Privacy Policy</a> |
+          <a href="./terms-and-conditions.html">Terms & Conditions</a> |
+          <a href="./cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

@@ -8,9 +8,54 @@
   </head>
   <body>
     <nav class="nav-bar">
-      <div class="nav-left">
-        <img src="./assets/logo.svg" />
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
+      <a href="./index.html" class="nav-left">
+        <img src="./assets/logo.svg" />
+      </a>
+
+      <div class="lang hamburger-1" id="lang-selector-mobile">
+        <img class="flag" id="selected-flag-mobile" src="./assets/flag.svg" />
+        <div class="country" id="selected-lang-mobile">EN</div>
+        <img class="dropdown" src="./assets/dropdown.svg" />
+
+        <div class="lang-options" id="lang-options-mobile">
+          <div
+            class="lang-option-mobile"
+            data-lang="EN"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>EN</span>
+          </div>
+          <div
+            class="lang-option-mobile"
+            data-lang="FR"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>FR</span>
+          </div>
+          <div
+            class="lang-option-mobile"
+            data-lang="DE"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>DE</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="./join-waitlist.html" class="btn nav-btn hamburger-2">
+        <div class="btn-text">JOIN WAITLIST</div>
+        <img class="btn-logo" src="./assets/button-tail.svg" />
+      </a>
+
       <div class="nav-right">
         <div class="nav-links">
           <a class="nav-links-item" href="./index.html">Home</a>
@@ -21,6 +66,55 @@
           <a class="nav-links-item" href="./blogs.html">Blogs</a>
           <a class="nav-links-item" href="./contact.html">Contact Us</a>
         </div>
+
+        <div class="lang" id="lang-selector">
+          <img class="flag" id="selected-flag" src="./assets/flag.svg" />
+          <div class="country" id="selected-lang">EN</div>
+          <img class="dropdown" src="./assets/dropdown.svg" />
+
+          <div class="lang-options" id="lang-options">
+            <div
+              class="lang-option"
+              data-lang="EN"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>EN</span>
+            </div>
+            <div
+              class="lang-option"
+              data-lang="FR"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>FR</span>
+            </div>
+            <div
+              class="lang-option"
+              data-lang="DE"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>DE</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="./join-waitlist.html" class="btn nav-btn">
+          <div class="btn-text">JOIN WAITLIST</div>
+          <img class="btn-logo" src="./assets/button-tail.svg" />
+        </a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./features.html">Features</a>
+        <a href="./subscription.html">Subscription</a>
+        <a href="./faq.html">FAQs</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="./contact.html">Contact Us</a>
         <div class="lang">
           <img class="flag" src="./assets/flag.svg" />
           <div class="country">EN</div>
@@ -35,16 +129,41 @@
     <div class="common-banner features-banner">
       <div class="common-banner-left">
         <h1>
-          Join the
-
-          <span class="text-span-1"
-            >TotalHER
-            <div class="underline"></div
-          ></span>
+          TotalHER
+          <span class="text-span-3"
+            >Privacy
+            <svg
+              class="underline-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="181"
+              height="13"
+              viewBox="0 0 181 13"
+              fill="none"
+            >
+              <path
+                d="M1 11C22.8184 4.20839 89.1642 -5.29987 180 11"
+                stroke="url(#paint0_linear_3445_5435)"
+                stroke-width="4"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_3445_5435"
+                  x1="1"
+                  y1="6.5"
+                  x2="180"
+                  y2="6.5"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FD3F5E" />
+                  <stop offset="1" stop-color="#D995C0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
           <br />
-          Waitlist
+          Policy
         </h1>
-        <p class="subheading">Be the first to experience the HER world.</p>
+        <p class="subheading">Understanding Your Privacy Rights, Our Way.</p>
       </div>
       <div class="common-banner-right">
         <img src="./assets/privacy-policy-bg.png" />
@@ -111,91 +230,401 @@
       </div>
 
       <p class="privacy-text">
-        Welcome to TotalHER. Your privacy matters to us. This Privacy Policy
-        explains how TotalHER (“we,” “us,” or “our”) collects, uses, stores,
-        shares, and protects your personal information when you access or use
-        the TotalHER website (collectively, the “Platform”).
+        At TotalHER, your privacy and security are our top priorities. This
+        Privacy Policy outlines how we collect, use, and protect your personal
+        data when you use our platform. It also explains your rights in relation
+        to your data and how we comply with applicable data protection laws.
       </p>
       <p class="privacy-text">
-        By using TotalHER, you agree to the practices described in this policy.
-        If you do not agree with our policies and practices, please do not use
-        the Platform.
+        By using TotalHER, you agree to the collection, use, and disclosure of
+        your information as described in this Privacy Policy. If you do not
+        agree with these terms, please do not use our service.
       </p>
 
-      <h2 class="privacy-heading">Who We Are</h2>
+      <h2 class="privacy-heading">1. Interpretation and Definitions</h2>
+      <h3 class="privacy-subheading">Interpretation</h3>
       <p class="privacy-text">
-        TotalHER is a global social networking platform exclusively for women,
-        operated in accordance with the laws of the State of Georgia, United
-        States. We are committed to creating a secure and empowering space where
-        women can connect, express themselves, share content, collaborate, and
-        grow personally and professionally.
+        Words in this Privacy Policy that are capitalized have specific meanings
+        defined here, regardless of whether they appear in singular or plural
+        form.
       </p>
 
-      <h2 class="privacy-heading">Eligibility to Use TotalHER</h2>
-      <p class="privacy-text">
-        TotalHER is available to individuals who are 13 years of age or older.
-        We do not knowingly collect or process personal data from anyone under
-        the age of 13. If we discover that we have inadvertently collected data
-        from a minor, we may suspend or remove access to that account.
-      </p>
-
-      <h2 class="privacy-heading">Information We Collect</h2>
-      <p class="privacy-text">
-        When you register for or use TotalHER, we collect the following types of
-        personal and usage information:
-      </p>
-
+      <h3 class="privacy-subheading">Definitions</h3>
+      <p class="privacy-text">For the purposes of this Privacy Policy:</p>
       <ul class="privacy-list">
         <li>
           <div class="li-round"></div>
-          Identity Data: Name, email address, date of birth, and gender.
+          Account: A unique user account created to access our services or parts
+          of the service.
         </li>
         <li>
           <div class="li-round"></div>
-          Location Data: General location based on IP address or entered
-          information.
+          Affiliate: An entity that controls, is controlled by, or is under
+          common control with the Company.
         </li>
         <li>
           <div class="li-round"></div>
-          Profile Data: Photos, videos, bio, and other content you upload to
-          your profile.
+          Application: Refers to the TotalHER platform (website, mobile app, or
+          service).
         </li>
         <li>
           <div class="li-round"></div>
-          Verification Data: Details for account verification, stored securely
-          and retained for the duration of account use.
+          Company: Refers to TotalHER, the platform provider.
         </li>
         <li>
           <div class="li-round"></div>
-          Payment Information: Data provided during subscription purchases or
-          other transactions.
+          Country: Refers to Georgia, United States.
         </li>
         <li>
           <div class="li-round"></div>
-          Usage Data: Device identifiers, interactions, preferences, content
-          engagement, and cookies.
+          Device: Any device (smartphone, tablet, computer) used to access the
+          service.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Personal Data: Any information that can identify an individual.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Service: Refers to the TotalHER platform.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Service Provider: Third-party entities that process personal data on
+          behalf of TotalHER.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Usage Data: Data collected automatically from the use of the service.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          You: The individual using the service or the company/entity on behalf
+          of which an individual is accessing the service.
         </li>
       </ul>
 
+      <h2 class="privacy-heading">2. Information We Collect</h2>
+      <h3 class="privacy-subheading">Personal Data</h3>
       <p class="privacy-text">
-        We do not collect sensitive personal data such as health records,
-        government IDs, or biometric information.
+        When you create an account or use the TotalHER platform, we may collect
+        the following types of personal data:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Name
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Email address
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Phone number
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Date of birth
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Gender
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Address, including postal code and city
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Profile photos and media uploaded by you
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Payment details for subscriptions and purchases
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Verification data
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Usage and device data (such as IP address, browser type, operating
+          system)
+        </li>
+      </ul>
+
+      <h3 class="privacy-subheading">Usage Data</h3>
+      <p class="privacy-text">
+        We collect information about how you interact with TotalHER, including:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Device information (e.g., unique identifiers, mobile operating system)
+        </li>
+        <li>
+          <div class="li-round"></div>
+          IP address and location
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Pages visited, time spent, and interactions on the platform
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Browsing activity and other diagnostic data
+        </li>
+      </ul>
+
+      <h3 class="privacy-subheading">
+        Information Collected While Using the Application
+      </h3>
+      <p class="privacy-text">
+        We may request access to certain information on your device with your
+        permission, such as:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Location data
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Contacts from your phonebook (if enabled)
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Media files, including photos and videos from your camera and photo
+          library
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">3. How We Use Your Information</h2>
+      <p class="privacy-text">
+        We use your personal data for the following purposes:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          To provide, maintain, and improve our services: This includes ensuring
+          platform functionality, providing support, and improving your
+          experience.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          To manage your account: We use your data to create and maintain your
+          TotalHER account and provide services to you.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          For communication: We use your contact details to send updates,
+          security alerts, promotional content (if you opt in), and respond to
+          your inquiries.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          To process payments: We use your payment information to process
+          subscription fees and any other transactions.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          For business operations: This includes data analysis, research, and
+          improving our products and services.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          For legal purposes: We may use your data to comply with legal
+          obligations, resolve disputes, and enforce our policies.
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">4. How We Share Your Information</h2>
+      <p class="privacy-text">
+        We may share your personal data in the following scenarios:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          With service providers: Third-party companies or individuals who
+          process data on our behalf, such as payment processors, cloud
+          services, and analytics providers.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          For business transfers: In the event of a merger, acquisition, or
+          sale, your data may be transferred as part of the transaction.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          With affiliates: Our parent company or other subsidiaries and business
+          partners may receive access to your data.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          With other users: If you share content publicly (e.g., posts,
+          stories), this information may be accessible by other users.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          With legal compliance: We may share your information if required to do
+          so by law or in response to valid requests by government authorities
+          (e.g., courts, regulatory agencies).
+        </li>
+        <li>
+          <div class="li-round"></div>
+          With your consent: We may share your data for any purpose with your
+          explicit consent.
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">5. Cookies and Tracking Technologies</h2>
+      <p class="privacy-text">
+        TotalHER uses cookies and similar technologies to provide and improve
+        the service. Cookies are small data files stored on your device that
+        allow us to enhance your user experience, analyze trends, and track
+        usage patterns.
+      </p>
+      <p class="privacy-text">Types of Cookies:</p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Necessary Cookies: Essential for platform functionality (e.g., session
+          cookies).
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Performance Cookies: Used to analyze and improve the performance of
+          the service.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Targeting Cookies: Help deliver personalized ads based on your
+          browsing activity.
+        </li>
+      </ul>
+      <p class="privacy-text">
+        You can manage your cookie preferences through your browser settings at
+        any time. For more details on our use of cookies, please refer to our
+        Cookie Policy on the website.
       </p>
 
-      <h2 class="privacy-heading">Contact Us</h2>
+      <h2 class="privacy-heading">6. Data Retention</h2>
       <p class="privacy-text">
-        If you have questions, concerns, or requests related to this Privacy
-        Policy or your personal data, please contact us:
+        We retain your personal data only as long as necessary to fulfill the
+        purposes outlined in this Privacy Policy. This includes:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Legal obligations: Retaining data for compliance with laws.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Dispute resolution: Retaining data as needed for legal processes.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Service improvement: Retaining data for internal analysis and service
+          optimization.
+        </li>
+      </ul>
+      <p class="privacy-text">
+        Usage data is generally retained for a shorter period unless used for
+        improving functionality or required for legal compliance.
+      </p>
+
+      <h2 class="privacy-heading">7. User Rights</h2>
+      <p class="privacy-text">
+        Depending on your location, you may have the following rights regarding
+        your personal data:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Access: Request a copy of your personal data.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Correction: Request corrections to any inaccurate data.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Deletion: Request deletion of your personal data (under certain
+          circumstances).
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Restriction: Request restriction of processing under certain
+          conditions.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Portability: Request a transfer of your data to another service.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Withdrawal of Consent: If you have consented to the processing of your
+          data, you can withdraw that consent at any time.
+        </li>
+      </ul>
+      <p class="privacy-text">
+        To exercise these rights, please contact us using the details provided
+        below.
+      </p>
+
+      <h2 class="privacy-heading">8. Data Security</h2>
+      <p class="privacy-text">
+        We take appropriate technical and organizational measures to safeguard
+        your personal data, including encryption, secure servers, and restricted
+        access to your data. However, no method of transmission over the
+        Internet or method of electronic storage is 100% secure. While we strive
+        to protect your data, we cannot guarantee its absolute security.
+      </p>
+
+      <h2 class="privacy-heading">9. Children’s Privacy</h2>
+      <p class="privacy-text">
+        TotalHER is not intended for use by children under the age of 13. We do
+        not knowingly collect personal data from anyone under the age of 13. If
+        you are a parent or guardian and believe that your child has provided us
+        with personal data, please contact us immediately so that we can delete
+        this information.
+      </p>
+
+      <h2 class="privacy-heading">10. Links to Other Websites</h2>
+      <p class="privacy-text">
+        Our Service may contain links to external websites that are not operated
+        by us. If you click on a third-party link, you will be directed to that
+        third party’s site. We strongly advise you to review the Privacy Policy
+        of every site you visit. We have no control over and assume no
+        responsibility for the content, privacy policies, or practices of
+        third-party sites or services.
+      </p>
+
+      <h2 class="privacy-heading">11. Changes to This Privacy Policy</h2>
+      <p class="privacy-text">
+        We may update this Privacy Policy from time to time. All updates will be
+        posted on this page, and the "Effective Date" will be updated
+        accordingly. We will notify you of significant changes by email or
+        through a prominent notice on the Service. Continued use of TotalHER
+        after such changes indicates your acceptance of the updated Privacy
+        Policy.
+      </p>
+
+      <h2 class="privacy-heading">12. Contact Us</h2>
+      <p class="privacy-text">
+        If you have any questions or concerns about this Privacy Policy or the
+        handling of your data, please contact us at:
         <br />
         <span class="privacy-text-email"
           >Email:
           <a href="mailto:totalherapp@gmail.com">totalherapp@gmail.com</a>
         </span>
-      </p>
-
-      <p class="privacy-text">
-        Thank you for trusting TotalHER and being part of our empowering
-        community. Your safety and privacy are at the heart of what we do.
+        <br />
+        <span class="privacy-text-email"
+          >Phone Number:
+          <a href="tel:866-786-8254">866-786-8254</a>
+        </span>
       </p>
     </div>
     <footer>
@@ -271,7 +700,7 @@
             </div>
             <div class="quick-links-menu-item">
               <img src="./assets/right-arrow.svg" />
-              <a href="./join-waitlist.html" class="quick-links-menu-item-text"
+              <a href="./request-her.html" class="quick-links-menu-item-text"
                 >RequestHER</a
               >
             </div>
@@ -319,6 +748,135 @@
           <div class="btn newsletter-btn">
             <div class="btn-text">NOTIFY ME</div>
             <img class="btn-logo" src="./assets/button-tail.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-content-mobile">
+        <div class="footer-content-mobile-1">
+          <div class="footer-logo">
+            <img src="./assets/footer-logo.svg" />
+            <div class="social-group">
+              <a
+                href="https://www.facebook.com/profile.php?id=61575257015506"
+                target="_blank"
+                class="social"
+                ><img src="./assets/fb.svg"
+              /></a>
+              <a
+                href="https://www.youtube.com/@totalher"
+                target="_blank"
+                class="social"
+                ><img src="./assets/youtube.svg"
+              /></a>
+              <a href="https://x.com/totalher" target="_blank" class="social"
+                ><img src="./assets/x.svg"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/phoenix-marcus-llc/"
+                target="_blank"
+                class="social"
+                ><img src="./assets/linkedin.svg"
+              /></a>
+            </div>
+            <div class="slash-bar footer-slash-bar"></div>
+          </div>
+          <div class="newsletter">
+            <div class="footer-columns-heading">Newsletter</div>
+            <div class="bottom-bar"></div>
+            <div class="newsletter-text">
+              Stay Connected & Informed with TotalHER.<br />
+              Sign up to get notified about our launch and updates.
+            </div>
+            <div class="email-input-box">
+              <img src="./assets/newsletter-email.svg" alt="mail icon" />
+              <input type="email" placeholder="Enter your email" />
+            </div>
+            <div class="btn newsletter-btn">
+              <div class="btn-text">NOTIFY ME</div>
+              <img class="btn-logo" src="./assets/button-tail.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-content-mobile-2">
+          <div class="quick-links">
+            <div class="footer-columns-heading">Quick Links</div>
+            <div class="bottom-bar"></div>
+            <div class="quick-links-menu">
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./index.html" class="quick-links-menu-item-text"
+                  >Home</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./about.html" class="quick-links-menu-item-text"
+                  >About</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./features.html" class="quick-links-menu-item-text"
+                  >Features</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./subscription.html" class="quick-links-menu-item-text"
+                  >Subscription</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./faq.html" class="quick-links-menu-item-text">FAQs</a>
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./blogs.html" class="quick-links-menu-item-text"
+                  >Blogs</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./contact.html" class="quick-links-menu-item-text"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./request-her.html" class="quick-links-menu-item-text"
+                  >RequestHER</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="footer-columns-heading">Contact</div>
+            <div class="bottom-bar"></div>
+            <div class="contact-details">
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/location.svg" />
+                <div class="contact-details-item-text">
+                  429 Loganville Hwy Ste 103 #7 Winder, GA 30680 USA
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/mail.svg" />
+                <div class="contact-details-item-text">
+                  <span>General Inquiry:</span><br />hello@totalher.co
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/mail.svg" />
+                <div class="contact-details-item-text">
+                  <span>App Support:</span><br />totalherapp@gmail.com
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img src="./assets/phone.svg" />
+                <div class="contact-details-item-text">866-786-8254</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

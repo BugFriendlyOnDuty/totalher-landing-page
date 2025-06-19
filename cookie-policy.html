@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TotalHER</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <a href="./index.html" class="nav-left">
+        <img src="./assets/logo.svg" />
+      </a>
+
+      <div class="lang hamburger-1" id="lang-selector-mobile">
+        <img class="flag" id="selected-flag-mobile" src="./assets/flag.svg" />
+        <div class="country" id="selected-lang-mobile">EN</div>
+        <img class="dropdown" src="./assets/dropdown.svg" />
+
+        <div class="lang-options" id="lang-options-mobile">
+          <div
+            class="lang-option-mobile"
+            data-lang="EN"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>EN</span>
+          </div>
+          <div
+            class="lang-option-mobile"
+            data-lang="FR"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>FR</span>
+          </div>
+          <div
+            class="lang-option-mobile"
+            data-lang="DE"
+            data-flag="./assets/flag.svg"
+          >
+            <img src="./assets/flag.svg" class="flag" />
+            <span>DE</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="./join-waitlist.html" class="btn nav-btn hamburger-2">
+        <div class="btn-text">JOIN WAITLIST</div>
+        <img class="btn-logo" src="./assets/button-tail.svg" />
+      </a>
+
+      <div class="nav-right">
+        <div class="nav-links">
+          <a class="nav-links-item" href="./index.html">Home</a>
+          <a class="nav-links-item" href="./about.html">About</a>
+          <a class="nav-links-item" href="./features.html">Features</a>
+          <a class="nav-links-item" href="./subscription.html">Subscription</a>
+          <a class="nav-links-item" href="./faq.html">FAQs</a>
+          <a class="nav-links-item" href="./blogs.html">Blogs</a>
+          <a class="nav-links-item" href="./contact.html">Contact Us</a>
+        </div>
+
+        <div class="lang" id="lang-selector">
+          <img class="flag" id="selected-flag" src="./assets/flag.svg" />
+          <div class="country" id="selected-lang">EN</div>
+          <img class="dropdown" src="./assets/dropdown.svg" />
+
+          <div class="lang-options" id="lang-options">
+            <div
+              class="lang-option"
+              data-lang="EN"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>EN</span>
+            </div>
+            <div
+              class="lang-option"
+              data-lang="FR"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>FR</span>
+            </div>
+            <div
+              class="lang-option"
+              data-lang="DE"
+              data-flag="./assets/flag.svg"
+            >
+              <img src="./assets/flag.svg" class="flag" />
+              <span>DE</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="./join-waitlist.html" class="btn nav-btn">
+          <div class="btn-text">JOIN WAITLIST</div>
+          <img class="btn-logo" src="./assets/button-tail.svg" />
+        </a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./features.html">Features</a>
+        <a href="./subscription.html">Subscription</a>
+        <a href="./faq.html">FAQs</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="./contact.html">Contact Us</a>
+        <div class="lang">
+          <img class="flag" src="./assets/flag.svg" />
+          <div class="country">EN</div>
+          <img class="dropdown" src="./assets/dropdown.svg" />
+        </div>
+        <div class="btn nav-btn">
+          <div class="btn-text">JOIN WAITLIST</div>
+          <img class="btn-logo" src="./assets/button-tail.svg" />
+        </div>
+      </div>
+    </nav>
+    <div class="common-banner features-banner">
+      <div class="common-banner-left">
+        <h1>
+          TotalHER
+          <span class="text-span-3"
+            >Cookie
+            <svg
+              class="underline-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="181"
+              height="13"
+              viewBox="0 0 181 13"
+              fill="none"
+            >
+              <path
+                d="M1 11C22.8184 4.20839 89.1642 -5.29987 180 11"
+                stroke="url(#paint0_linear_3445_5435)"
+                stroke-width="4"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_3445_5435"
+                  x1="1"
+                  y1="6.5"
+                  x2="180"
+                  y2="6.5"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FD3F5E" />
+                  <stop offset="1" stop-color="#D995C0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <br />
+          Policy
+        </h1>
+        <p class="subheading">Understanding Your Cookie Policy, Our Way.</p>
+      </div>
+      <div class="common-banner-right">
+        <img src="./assets/privacy-policy-bg.png" />
+      </div>
+    </div>
+    <div class="privacy-container">
+      <div class="privacy-meta">
+        <p class="privacy-date">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+          >
+            <path
+              d="M22.2741 0H19.9377V2.33645C19.9377 2.80374 19.5483 3.11526 19.1589 3.11526C18.7695 3.11526 18.3801 2.80374 18.3801 2.33645V0H5.919V2.33645C5.919 2.80374 5.52959 3.11526 5.14019 3.11526C4.75078 3.11526 4.36137 2.80374 4.36137 2.33645V0H2.02492C0.856698 0 0 1.01246 0 2.33645V5.14019H24.9221V2.33645C24.9221 1.01246 23.5203 0 22.2741 0ZM0 6.7757V21.028C0 22.4299 0.856698 23.3645 2.1028 23.3645H22.352C23.5981 23.3645 25 22.352 25 21.028V6.7757H0ZM6.93146 19.8598H5.06231C4.75078 19.8598 4.43925 19.6262 4.43925 19.2368V17.2897C4.43925 16.9782 4.6729 16.6667 5.06231 16.6667H7.00935C7.32087 16.6667 7.6324 16.9003 7.6324 17.2897V19.2368C7.55452 19.6262 7.32087 19.8598 6.93146 19.8598ZM6.93146 12.8505H5.06231C4.75078 12.8505 4.43925 12.6168 4.43925 12.2274V10.2804C4.43925 9.96885 4.6729 9.65732 5.06231 9.65732H7.00935C7.32087 9.65732 7.6324 9.89097 7.6324 10.2804V12.2274C7.55452 12.6168 7.32087 12.8505 6.93146 12.8505ZM13.162 19.8598H11.215C10.9034 19.8598 10.5919 19.6262 10.5919 19.2368V17.2897C10.5919 16.9782 10.8255 16.6667 11.215 16.6667H13.162C13.4735 16.6667 13.785 16.9003 13.785 17.2897V19.2368C13.785 19.6262 13.5514 19.8598 13.162 19.8598ZM13.162 12.8505H11.215C10.9034 12.8505 10.5919 12.6168 10.5919 12.2274V10.2804C10.5919 9.96885 10.8255 9.65732 11.215 9.65732H13.162C13.4735 9.65732 13.785 9.89097 13.785 10.2804V12.2274C13.785 12.6168 13.5514 12.8505 13.162 12.8505ZM19.3925 19.8598H17.4455C17.134 19.8598 16.8224 19.6262 16.8224 19.2368V17.2897C16.8224 16.9782 17.0561 16.6667 17.4455 16.6667H19.3925C19.7041 16.6667 20.0156 16.9003 20.0156 17.2897V19.2368C20.0156 19.6262 19.7819 19.8598 19.3925 19.8598ZM19.3925 12.8505H17.4455C17.134 12.8505 16.8224 12.6168 16.8224 12.2274V10.2804C16.8224 9.96885 17.0561 9.65732 17.4455 9.65732H19.3925C19.7041 9.65732 20.0156 9.89097 20.0156 10.2804V12.2274C20.0156 12.6168 19.7819 12.8505 19.3925 12.8505Z"
+              fill="url(#paint0_linear_3202_8494)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_3202_8494"
+                x1="2.15694"
+                y1="-17.5005"
+                x2="27.6453"
+                y2="-15.7091"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF405E" />
+                <stop offset="1" stop-color="#B8509C" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>Effective Date: 10/05/2025</span>
+        </p>
+        <p class="privacy-updated">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+          >
+            <path
+              d="M22.2741 0H19.9377V2.33645C19.9377 2.80374 19.5483 3.11526 19.1589 3.11526C18.7695 3.11526 18.3801 2.80374 18.3801 2.33645V0H5.919V2.33645C5.919 2.80374 5.52959 3.11526 5.14019 3.11526C4.75078 3.11526 4.36137 2.80374 4.36137 2.33645V0H2.02492C0.856698 0 0 1.01246 0 2.33645V5.14019H24.9221V2.33645C24.9221 1.01246 23.5203 0 22.2741 0ZM0 6.7757V21.028C0 22.4299 0.856698 23.3645 2.1028 23.3645H22.352C23.5981 23.3645 25 22.352 25 21.028V6.7757H0ZM6.93146 19.8598H5.06231C4.75078 19.8598 4.43925 19.6262 4.43925 19.2368V17.2897C4.43925 16.9782 4.6729 16.6667 5.06231 16.6667H7.00935C7.32087 16.6667 7.6324 16.9003 7.6324 17.2897V19.2368C7.55452 19.6262 7.32087 19.8598 6.93146 19.8598ZM6.93146 12.8505H5.06231C4.75078 12.8505 4.43925 12.6168 4.43925 12.2274V10.2804C4.43925 9.96885 4.6729 9.65732 5.06231 9.65732H7.00935C7.32087 9.65732 7.6324 9.89097 7.6324 10.2804V12.2274C7.55452 12.6168 7.32087 12.8505 6.93146 12.8505ZM13.162 19.8598H11.215C10.9034 19.8598 10.5919 19.6262 10.5919 19.2368V17.2897C10.5919 16.9782 10.8255 16.6667 11.215 16.6667H13.162C13.4735 16.6667 13.785 16.9003 13.785 17.2897V19.2368C13.785 19.6262 13.5514 19.8598 13.162 19.8598ZM13.162 12.8505H11.215C10.9034 12.8505 10.5919 12.6168 10.5919 12.2274V10.2804C10.5919 9.96885 10.8255 9.65732 11.215 9.65732H13.162C13.4735 9.65732 13.785 9.89097 13.785 10.2804V12.2274C13.785 12.6168 13.5514 12.8505 13.162 12.8505ZM19.3925 19.8598H17.4455C17.134 19.8598 16.8224 19.6262 16.8224 19.2368V17.2897C16.8224 16.9782 17.0561 16.6667 17.4455 16.6667H19.3925C19.7041 16.6667 20.0156 16.9003 20.0156 17.2897V19.2368C20.0156 19.6262 19.7819 19.8598 19.3925 19.8598ZM19.3925 12.8505H17.4455C17.134 12.8505 16.8224 12.6168 16.8224 12.2274V10.2804C16.8224 9.96885 17.0561 9.65732 17.4455 9.65732H19.3925C19.7041 9.65732 20.0156 9.89097 20.0156 10.2804V12.2274C20.0156 12.6168 19.7819 12.8505 19.3925 12.8505Z"
+              fill="url(#paint0_linear_3202_8494)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_3202_8494"
+                x1="2.15694"
+                y1="-17.5005"
+                x2="27.6453"
+                y2="-15.7091"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF405E" />
+                <stop offset="1" stop-color="#B8509C" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>Last Updated: 12/06/2025</span>
+        </p>
+      </div>
+
+      <p class="privacy-text">
+        At TotalHER, we prioritize the privacy and security of our users while
+        delivering an empowering and seamless experience on our platform. This
+        Cookie Policy explains what cookies are, how we use them, the types of
+        cookies we collect, and how you can manage your cookie preferences.
+      </p>
+      <p class="privacy-text">
+        For detailed information on how we protect and handle your data, please
+        review our Privacy Policy.
+      </p>
+      <p class="privacy-text">
+        By using TotalHER, you agree to our use of cookies as outlined in this
+        policy. If you do not agree, you can manage or disable cookies through
+        your browser settings.
+      </p>
+
+      <h2 class="privacy-heading">1. What Are Cookies?</h2>
+      <p class="privacy-text">
+        Cookies are small text files that are stored on your device (computer,
+        smartphone, etc.) when you visit websites. These cookies allow the
+        website to recognize your device and store certain preferences or
+        information to enhance your experience.
+      </p>
+      <p class="privacy-text">
+        There are different types of cookies, including:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Session Cookies: These are temporary cookies that remain on your
+          device only for the duration of your visit. They are automatically
+          deleted once you close your browser.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Persistent Cookies: These cookies remain on your device for a set
+          period of time or until you manually delete them. They are used to
+          remember your preferences or login information across sessions.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          First-Party Cookies: These are cookies set directly by TotalHER.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Third-Party Cookies: These cookies are set by other parties, such as
+          analytics providers, advertisers, or other social media platforms.
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">2. How We Use Cookies</h2>
+      <p class="privacy-text">
+        We use cookies to provide, improve, and personalize our services, making
+        your experience on TotalHER better. Here’s how we use cookies:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Essential Cookies: These cookies are necessary for the basic functions
+          of the website or mobile app, such as logging in, navigating between
+          pages, and ensuring security.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Performance Cookies: These cookies collect data on how visitors
+          interact with our website or app, including the pages they visit and
+          the links they click on. This helps us analyze traffic and improve the
+          user experience.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Functionality Cookies: These cookies allow TotalHER to remember
+          choices you make (like your username or language preference) and
+          provide enhanced, more personalized features.
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Targeting/Advertising Cookies: These cookies are used to deliver
+          relevant ads to users. They track your browsing habits and ensure that
+          the ads you see are tailored to your interests.
+        </li>
+      </ul>
+
+      <h2 class="privacy-heading">3. Third-Party Cookies</h2>
+      <p class="privacy-text">
+        We may use third-party cookies to provide certain services, including
+        analytics, advertising, and social media integrations. These third-party
+        service providers may set cookies to:
+      </p>
+      <ul class="privacy-list">
+        <li>
+          <div class="li-round"></div>
+          Analyze user behavior and improve our services
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Serve relevant ads based on your browsing history
+        </li>
+        <li>
+          <div class="li-round"></div>
+          Enable social sharing features.
+        </li>
+      </ul>
+      <p class="privacy-text">
+        These third-party providers have their own privacy policies and are
+        responsible for the use of cookies. You can manage or block these
+        cookies through your browser settings.
+      </p>
+
+      <h2 class="privacy-heading">4. Managing Your Cookie Preferences</h2>
+      <p class="privacy-text">
+        When you first visit TotalHER, you will be prompted to consent to the
+        use of cookies. You can accept or decline non-essential cookies. If you
+        decline, you will still be able to access most of TotalHER’s features,
+        but some functionalities may be limited.
+      </p>
+      <p class="privacy-text">
+        You can also manage your cookie preferences at any time by adjusting
+        your settings. If you want to block cookies altogether, you can do so by
+        modifying your browser settings. However, please note that if you block
+        all cookies, certain features of TotalHER may not function properly.
+      </p>
+      <p class="privacy-text">
+        For instructions on how to manage cookies in different browsers, please
+        visit the help section of your browser.
+      </p>
+
+      <h2 class="privacy-heading">5. Cookie Retention</h2>
+      <p class="privacy-text">
+        Cookies used by TotalHER may be stored on your device for varying
+        durations, depending on their type. Session cookies are temporary and
+        are deleted once you close your browser. Persistent cookies remain on
+        your device until manually deleted or for as long as necessary to
+        fulfill their purpose.
+      </p>
+
+      <h2 class="privacy-heading">6. Changes to This Policy</h2>
+      <p class="privacy-text">
+        We may update this Cookie Policy from time to time. When changes are
+        made, the updated policy will be posted here with a new "Effective
+        Date." We encourage you to periodically review this policy for any
+        updates.
+      </p>
+      <p class="privacy-text">
+        By continuing to use TotalHER after any updates to this policy, you
+        accept the changes.
+      </p>
+
+      <h2 class="privacy-heading">7. Contact Us</h2>
+      <p class="privacy-text">
+        If you have any questions about this Cookie Policy or how we handle your
+        data, please feel free to contact us at:
+        <br />
+        <span class="privacy-text-email"
+          >Email:
+          <a href="mailto:totalherapp@gmail.com">totalherapp@gmail.com</a>
+        </span>
+      </p>
+      <p class="privacy-text">
+        Thank you for trusting TotalHER. We are committed to making your
+        experience safe, enjoyable, and empowering!
+      </p>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./assets/footer-logo.svg" />
+          <div class="social-group">
+            <a
+              href="https://www.facebook.com/profile.php?id=61575257015506"
+              target="_blank"
+              class="social"
+              ><img src="./assets/fb.svg"
+            /></a>
+            <a
+              href="https://www.youtube.com/@totalher"
+              target="_blank"
+              class="social"
+              ><img src="./assets/youtube.svg"
+            /></a>
+            <a href="https://x.com/totalher" target="_blank" class="social"
+              ><img src="./assets/x.svg"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/phoenix-marcus-llc/"
+              target="_blank"
+              class="social"
+              ><img src="./assets/linkedin.svg"
+            /></a>
+          </div>
+          <div class="slash-bar footer-slash-bar"></div>
+        </div>
+        <div class="quick-links">
+          <div class="footer-columns-heading">Quick Links</div>
+          <div class="bottom-bar"></div>
+          <div class="quick-links-menu">
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./index.html" class="quick-links-menu-item-text">Home</a>
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./about.html" class="quick-links-menu-item-text"
+                >About</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./features.html" class="quick-links-menu-item-text"
+                >Features</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./subscription.html" class="quick-links-menu-item-text"
+                >Subscription</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./faq.html" class="quick-links-menu-item-text">FAQs</a>
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./blogs.html" class="quick-links-menu-item-text"
+                >Blogs</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./contact.html" class="quick-links-menu-item-text"
+                >Contact Us</a
+              >
+            </div>
+            <div class="quick-links-menu-item">
+              <img src="./assets/right-arrow.svg" />
+              <a href="./request-her.html" class="quick-links-menu-item-text"
+                >RequestHER</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="footer-columns-heading">Contact</div>
+          <div class="bottom-bar"></div>
+          <div class="contact-details">
+            <div class="contact-details-item">
+              <img class="img-margin-top" src="./assets/location.svg" />
+              <div class="contact-details-item-text">
+                429 Loganville Hwy Ste 103 #7 Winder, GA 30680 USA
+              </div>
+            </div>
+            <div class="contact-details-item">
+              <img class="img-margin-top" src="./assets/mail.svg" />
+              <div class="contact-details-item-text">
+                <span>General Inquiry:</span><br />hello@totalher.co
+              </div>
+            </div>
+            <div class="contact-details-item">
+              <img class="img-margin-top" src="./assets/mail.svg" />
+              <div class="contact-details-item-text">
+                <span>App Support:</span><br />totalherapp@gmail.com
+              </div>
+            </div>
+            <div class="contact-details-item">
+              <img src="./assets/phone.svg" />
+              <div class="contact-details-item-text">866-786-8254</div>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter">
+          <div class="footer-columns-heading">Newsletter</div>
+          <div class="bottom-bar"></div>
+          <div class="newsletter-text">
+            Stay Connected & Informed with TotalHER.<br />
+            Sign up to get notified about our launch and updates.
+          </div>
+          <div class="email-input-box">
+            <img src="./assets/newsletter-email.svg" alt="mail icon" />
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <div class="btn newsletter-btn">
+            <div class="btn-text">NOTIFY ME</div>
+            <img class="btn-logo" src="./assets/button-tail.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-content-mobile">
+        <div class="footer-content-mobile-1">
+          <div class="footer-logo">
+            <img src="./assets/footer-logo.svg" />
+            <div class="social-group">
+              <a
+                href="https://www.facebook.com/profile.php?id=61575257015506"
+                target="_blank"
+                class="social"
+                ><img src="./assets/fb.svg"
+              /></a>
+              <a
+                href="https://www.youtube.com/@totalher"
+                target="_blank"
+                class="social"
+                ><img src="./assets/youtube.svg"
+              /></a>
+              <a href="https://x.com/totalher" target="_blank" class="social"
+                ><img src="./assets/x.svg"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/phoenix-marcus-llc/"
+                target="_blank"
+                class="social"
+                ><img src="./assets/linkedin.svg"
+              /></a>
+            </div>
+            <div class="slash-bar footer-slash-bar"></div>
+          </div>
+          <div class="newsletter">
+            <div class="footer-columns-heading">Newsletter</div>
+            <div class="bottom-bar"></div>
+            <div class="newsletter-text">
+              Stay Connected & Informed with TotalHER.<br />
+              Sign up to get notified about our launch and updates.
+            </div>
+            <div class="email-input-box">
+              <img src="./assets/newsletter-email.svg" alt="mail icon" />
+              <input type="email" placeholder="Enter your email" />
+            </div>
+            <div class="btn newsletter-btn">
+              <div class="btn-text">NOTIFY ME</div>
+              <img class="btn-logo" src="./assets/button-tail.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-content-mobile-2">
+          <div class="quick-links">
+            <div class="footer-columns-heading">Quick Links</div>
+            <div class="bottom-bar"></div>
+            <div class="quick-links-menu">
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./index.html" class="quick-links-menu-item-text"
+                  >Home</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./about.html" class="quick-links-menu-item-text"
+                  >About</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./features.html" class="quick-links-menu-item-text"
+                  >Features</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./subscription.html" class="quick-links-menu-item-text"
+                  >Subscription</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./faq.html" class="quick-links-menu-item-text">FAQs</a>
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./blogs.html" class="quick-links-menu-item-text"
+                  >Blogs</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./contact.html" class="quick-links-menu-item-text"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="quick-links-menu-item">
+                <img src="./assets/right-arrow.svg" />
+                <a href="./request-her.html" class="quick-links-menu-item-text"
+                  >RequestHER</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="footer-columns-heading">Contact</div>
+            <div class="bottom-bar"></div>
+            <div class="contact-details">
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/location.svg" />
+                <div class="contact-details-item-text">
+                  429 Loganville Hwy Ste 103 #7 Winder, GA 30680 USA
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/mail.svg" />
+                <div class="contact-details-item-text">
+                  <span>General Inquiry:</span><br />hello@totalher.co
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img class="img-margin-top" src="./assets/mail.svg" />
+                <div class="contact-details-item-text">
+                  <span>App Support:</span><br />totalherapp@gmail.com
+                </div>
+              </div>
+              <div class="contact-details-item">
+                <img src="./assets/phone.svg" />
+                <div class="contact-details-item-text">866-786-8254</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="ellipse" src="./assets/ellipse.svg" />
+      <div class="footer-divider"></div>
+      <div class="footer-copyright">
+        <div>Copyright © 2025 TotalHER. All rights reserved.</div>
+        <div>
+          <a href="./privacy-policy.html">Privacy Policy</a> |
+          <a href="./terms-and-conditions.html">Terms & Conditions</a> |
+          <a href="./cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
